@@ -135,7 +135,7 @@ for(let i=0; i<money.length; i++){
 	if(!money[i].kill){
 		if( !gameOver && checkHit(this.x, this.y, this.w, this.h, money[i].x, money[i].y, money[i].w, money[i].h)){
 			money[i].kill = true;
-			console.log(money[i].kill)	
+			// console.log(money[i].kill)	
 		  sum += money[i].score;
 			//効果音
 			sound.currentTime=0;
@@ -150,7 +150,7 @@ for(let i=0; i<ice_cream.length; i++){
 	if(!ice_cream[i].kill){
 		if( !gameOver && checkHit(this.x, this.y, this.w, this.h, ice_cream[i].x, ice_cream[i].y, ice_cream[i].w, ice_cream[i].h)){
 			ice_cream[i].kill = true;
-			console.log(ice_cream[i].kill)
+			// console.log(ice_cream[i].kill)
 		  hp += ice_cream[i].recover;
 			//効果音
 			music.currentTime=0;
