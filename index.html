@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>落ちゲー</title>
+  <title>キャッチゲーム</title>
 	<style>
 		* {
 			padding: 0;
@@ -13,6 +13,7 @@
     body{
       overflow: scroll;
       font-family: 'Courier New', Courier, monospace;
+      letter-spacing: 3px;
     }
     canvas{
       float: left;
@@ -29,7 +30,7 @@
       position: relative;
     }
     .commandKey h1::before{
-      width: 120px;
+      width: 125px;
       height: 15px;
       background-color: rgba(84, 145, 224, 0.5);
       content: "";
@@ -46,6 +47,7 @@
 	<canvas id="can"></canvas>
   <div class="commandKey">
     <h1>操作キー</h1>
+    <p>	&#9825;&nbsp;：&nbsp;HPゲージ</p>
     <p>&#8678;&nbsp;：&nbsp;左方向に移動</p>
     <p>&#8680;&nbsp;：&nbsp;右方向に移動</p>
     <p>スペースキー&nbsp;：&nbsp;リセット（ゲームオーバー後）</p>
