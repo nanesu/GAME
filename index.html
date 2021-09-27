@@ -10,15 +10,47 @@
 			padding: 0;
 			margin: 0;
 		}
-	
+    body{
+      overflow: scroll;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    canvas{
+      float: left;
+
+    }
+    .commandKey{
+      float: left;
+      padding: 30px;
+
+    }
+    .commandKey h1{
+      font-size: 30px;
+      color: #000;
+      position: relative;
+    }
+    .commandKey h1::before{
+      width: 120px;
+      height: 15px;
+      background-color: rgba(84, 145, 224, 0.5);
+      content: "";
+      position: absolute;
+      top: 23px;
+      z-index: -1;
+    }
+   .commandKey p{
+      font-size: 22px;
+   }
 	</style>
 </head>
 <body>
 	<canvas id="can"></canvas>
+  <div class="commandKey">
+    <h1>操作キー</h1>
+    <p>&#8678;&nbsp;：&nbsp;左方向に移動</p>
+    <p>&#8680;&nbsp;：&nbsp;右方向に移動</p>
+    <p>スペースキー&nbsp;：&nbsp;リセット（ゲームオーバー後）</p>
+  </div>
 
-
-  <script src="js/engine/sprite.js"></script>
-  <script src="js/engine/game.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
